@@ -1,0 +1,17 @@
+﻿<nav class="pull-right" data-bind="visible: pages() > 1">
+    <ul class="pagination">
+        <li data-bind="css: {disabled: page() === 1}">
+            <a href="#" data-bind="click: clickPrevButton">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+        </li>
+        <!-- ko foreach: numbers -->
+        <li data-bind="css: {active: $data===$parent.page()}"><a href="#" data-bind="text: $data, click: $parent.clickPageButton"></a></li>
+        <!-- /ko -->
+        <li data-bind="css: {disabled: page() === pages()}">
+            <a href="#" data-bind="click: clickNextButton">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </li>
+    </ul>
+</nav>

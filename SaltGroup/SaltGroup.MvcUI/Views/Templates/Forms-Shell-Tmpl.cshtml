@@ -1,0 +1,13 @@
+﻿<article>
+    <header>
+        <h3>
+            <span data-bind="text: headPage"></span>
+            <br />
+            <small data-bind="text: subheadPage"></small>
+        </h3>
+    </header>
+    <form action="@Url.Action(null)" method="post" class="form-horizontal" data-bind="submit: doSubmit">
+        <section data-bind="component: {name: formComponent, params: formData}"></section>
+        <section data-bind="component: buttonsTmpl"></section>
+    </form>
+</article>

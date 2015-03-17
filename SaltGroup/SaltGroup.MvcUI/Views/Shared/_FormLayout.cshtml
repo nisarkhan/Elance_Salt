@@ -1,0 +1,24 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_InnerLayout.cshtml";
+}
+
+@* Esta vista es equivalente a la plantilla generic-form-tmpl (genericFormPartial) *@
+<form action="@Url.Action(null)" method="post" data-bind="submit: formPost" class="form-horizontal">
+    <fieldset>
+        <legend>@ViewBag.HeadPage</legend>
+        @RenderBody()
+        <div class="form-buttons">
+            @Html.CancelBtn("#")
+            @Html.SaveBtn()
+        </div>
+    </fieldset>
+</form>
+
+@section leftPanel {
+    @RenderSection("leftPanel", false)
+}
+
+@section scripts {
+    @RenderSection("scripts", false)
+}

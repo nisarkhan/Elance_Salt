@@ -1,0 +1,22 @@
+﻿@{
+    Layout = "_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="~/Images/logo.gif" title="Salt Group" class="img-responsive center-block" />
+        <div data-bind="template: leftPanelTmpl">
+            @RenderSection("leftPanel", false)
+        </div>
+    </div>
+    <div class="col-md-10">
+        <div data-bind="template: {name: bodyTmpl, data: view}">
+            @RenderBody()
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    @RenderSection("scripts", false)
+}
+

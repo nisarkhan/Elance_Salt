@@ -1,0 +1,26 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="~/Images/logo.gif" title="Salt Group" class="img-responsive center-block" />
+        <div data-bind="component: {
+            name: componentPanel,
+            params: {action: action}
+        }"></div>
+    </div>
+    <div class="col-md-10">
+        <div data-bind="template: {name: bodyTmpl}">
+            @RenderBody()
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    @Html.Partial("_componentesAppPartial")
+    @RenderSection("scripts", false)
+}
+
+
+

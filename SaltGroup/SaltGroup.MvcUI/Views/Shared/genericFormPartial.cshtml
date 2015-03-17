@@ -1,0 +1,12 @@
+﻿<form action="/"  method="post" data-bind="submit: formPost" class="form-horizontal">
+    <fieldset>
+        <legend data-bind="text: headPage"></legend>
+        <div data-bind="template: {name: formTmpl}"></div>
+        <div class="form-buttons">
+            @Html.CancelBtn("#")
+            @Html.SaveBtn()
+        </div>
+    </fieldset>
+</form>
+
+

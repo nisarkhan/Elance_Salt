@@ -1,0 +1,23 @@
+﻿@{
+    Layout = "~/Views/Shared/SpaTemplatesLayout.cshtml";
+    ViewBag.HeadPage = "Salt Group";
+    string action = Request.RequestContext.RouteData.Values["action"].ToString().ToLower();
+    string controller = Request.RequestContext.RouteData.Values["controller"].ToString().ToLower();
+    string path = "/" + controller + "/" + action;
+}
+
+
+@section scripts {
+    <script src="~/Scripts/require.js"></script>
+    <script type="text/javascript">
+        require(["/Scripts/app/_config-paths.js"], function (paths) {
+            require.config({
+                paths: paths,
+                baseUrl: "/Scripts/app"
+            });
+            require(["jquery", "ko", "app", "Q", "text"], function ($, ko, app) {
+                app.initialize("@path");
+            });
+        });
+    </script>
+}

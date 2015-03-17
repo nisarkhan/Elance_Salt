@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaltGroup.Data", "SaltGroup.Data\SaltGroup.Data.csproj", "{F1BF5F0E-52E9-4AE7-B13C-F28639F52CAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaltGroup.MvcUI", "SaltGroup.MvcUI\SaltGroup.MvcUI.csproj", "{9ECD7D4C-F200-4E83-A197-EF91EF5CEDE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaltGroup.Infrastructure", "SaltGroup.Infrastructure\SaltGroup.Infrastructure.csproj", "{4C1268D4-574D-491D-A0E5-9817225E67A9}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://ramonguzman.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SaltGroup.Data\\SaltGroup.Data.csproj
+		SccProjectName1 = SaltGroup.Data
+		SccLocalPath1 = SaltGroup.Data
+		SccProjectUniqueName2 = SaltGroup.MvcUI\\SaltGroup.MvcUI.csproj
+		SccProjectName2 = SaltGroup.MvcUI
+		SccLocalPath2 = SaltGroup.MvcUI
+		SccProjectUniqueName3 = SaltGroup.Infrastructure\\SaltGroup.Infrastructure.csproj
+		SccProjectName3 = SaltGroup.Infrastructure
+		SccLocalPath3 = SaltGroup.Infrastructure
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1BF5F0E-52E9-4AE7-B13C-F28639F52CAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1BF5F0E-52E9-4AE7-B13C-F28639F52CAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1BF5F0E-52E9-4AE7-B13C-F28639F52CAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1BF5F0E-52E9-4AE7-B13C-F28639F52CAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ECD7D4C-F200-4E83-A197-EF91EF5CEDE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ECD7D4C-F200-4E83-A197-EF91EF5CEDE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ECD7D4C-F200-4E83-A197-EF91EF5CEDE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ECD7D4C-F200-4E83-A197-EF91EF5CEDE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C1268D4-574D-491D-A0E5-9817225E67A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C1268D4-574D-491D-A0E5-9817225E67A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C1268D4-574D-491D-A0E5-9817225E67A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C1268D4-574D-491D-A0E5-9817225E67A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
